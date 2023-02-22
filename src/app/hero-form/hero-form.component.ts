@@ -18,4 +18,19 @@ export class HeroFormComponent {
 
   onSubmit() { this.submitted = true; }
 
+
+  newHero() {
+    this.model = new Hero(42, '', '');
+  }
+
+  skyDog(): Hero {
+    const myHero =  new Hero(42, 'SkyDog',
+                           'Fetch any object at any distance',
+                           'Leslie Rollover');
+    console.log('My hero is called ' + myHero.name); 
+    return myHero;
+  }
+
+
+
 }
